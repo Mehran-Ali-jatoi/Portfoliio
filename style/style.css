@@ -4,9 +4,11 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 body{
     overflow-x: hidden !important;
+    font-family: "Sarpanch", sans-serif;
 }
 header{
     width: 100vw;
@@ -155,6 +157,7 @@ header nav ul li a{
 .hero .container .intro  h1{
     font-size: 60px;
     color: white;
+    font-family: "Ramabhadra", sans-serif;
 }
 .hero .container .intro  h3{
     font-size: 40px;
@@ -164,6 +167,7 @@ header nav ul li a{
     font-size: 16px;
     color: white;
     padding: 10px;
+      font-family: "Gudea", sans-serif;
 }
 .hero .container .intro  p span {
     display: inline-block;
@@ -266,11 +270,13 @@ header nav ul li a{
     font-size: 35px;
     color: white;
     font-weight: 500;
+     font-family: "Volkhov", serif;
 }
 .About .container .top .About_text p{
     color: white;
     width: 90%;
     padding-top: 10px;
+      font-family: "Gudea", sans-serif;
 }
 .About .container  .top .About_text div{
     width: 100%;
@@ -320,6 +326,7 @@ header nav ul li a{
     font-size: 30px;
     color: white;
     padding: 10px;
+     font-family: "Volkhov", serif;
 }
 .About .container .bottom  .i_do_card{
     width: 100%;
@@ -364,6 +371,7 @@ header nav ul li a{
 .About .container .bottom  .i_do_card .card .item  p{
     font-size: 25px;
     color: white;
+      font-family: "Gudea", sans-serif;
 }
 .Skills{
     width: 100vw;
@@ -400,6 +408,7 @@ header nav ul li a{
     font-size: 35px;
     color: white;
     font-weight: 500;
+     font-family: "Volkhov", serif;
 }
 .Skills .Technical_Skills .Show_skills .Percentage{
     width: 80%;
@@ -493,6 +502,7 @@ header nav ul li a{
     font-size: 35px;
     color: white;
     font-weight: 500;
+     font-family: "Volkhov", serif;
 }
 .circle-skill {
     display: flex;
@@ -548,6 +558,7 @@ header nav ul li a{
     margin-top: 10px;
     font-size: 18px;
     color: #ddd;
+      font-family: "Gudea", sans-serif;
 }
 @media (max-width: 1200px) {
     .Skills{
@@ -567,6 +578,7 @@ header nav ul li a{
 
     .Skills .Technical_Skills .Show_skills .Skills_heading h2 {
         font-size: 28px;
+         font-family: "Volkhov", serif;
     }
 
     .Skills .Technical_Skills .Show_skills .Percentage {
@@ -604,6 +616,7 @@ header nav ul li a{
     font-size: 2rem; /* Maintain consistent font size */
     color: white;
     font-weight: 500;
+     font-family: "Volkhov", serif;
 }
 
 .Projects .Project {
@@ -702,6 +715,7 @@ header nav ul li a{
     color: white;
     font-size: 35px;
     font-weight: 500;
+     font-family: "Volkhov", serif;
 }
 .Contact .contact_items{
     width: 100%;
