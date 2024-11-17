@@ -330,12 +330,15 @@ header nav ul li a{
 }
 .About .container .bottom  .i_do_card .card{
     width: 80%;
-    height: 300px;
+    min-width: 500px;
+    min-height: 300px;
+
+    height: 90%;
     background-color: #202026;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 10px 3px black;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.452);
 }
 .About .container .bottom  .i_do_card .card .item{
     width: 90%;
@@ -344,9 +347,10 @@ header nav ul li a{
     justify-content: center;
     flex-direction: column; 
 }
-.About .container .bottom  .i_do_card .card .item span{
-    display:"flex";
+.About .container .bottom  .i_do_card .card .item  span{
+    display: flex;
     gap:10px;
+}
 .About .container .bottom  .i_do_card .card .item img{
     width: 40px;
     height: 40px;
