@@ -122,7 +122,6 @@ header nav ul li a{
 }
 .hero{
     width: 100vw;
-    min-height: 90vh;
     background-color:#202026;
     display: flex;
     justify-content: center;
@@ -132,7 +131,7 @@ header nav ul li a{
     width: 80%;
     height: 90%;
     display: flex;
-    
+
 }
 .hero .container .intro,.About .container .top .About_img{
     width: 50%;
@@ -237,7 +236,6 @@ header nav ul li a{
 
 .About{
     width: 100vw;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -372,7 +370,7 @@ header nav ul li a{
 }
 .Skills{
     width: 100vw;
-    height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -593,7 +591,6 @@ header nav ul li a{
 
 .Projects {
     width: 100%;
-    height: 70vh;
     background-color: #202026;
     display: flex;
     justify-content: center;
@@ -691,7 +688,6 @@ header nav ul li a{
 }
 .Contact{
     width: 100vw;
-    height: 100vh;
     background-color: #202026;
     background-image: url("../images/map-color-overlay.png");
     background-size: 100% 100%;
