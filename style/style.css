@@ -344,6 +344,9 @@ header nav ul li a{
     justify-content: center;
     flex-direction: column; 
 }
+.About .container .bottom  .i_do_card .card .item span{
+    display:"flex";
+    gap:10px;
 .About .container .bottom  .i_do_card .card .item img{
     width: 40px;
     height: 40px;
