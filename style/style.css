@@ -786,7 +786,7 @@ header nav ul li a{
 }
 .Contact .contact_items .map .location iframe{
     width: 100%;
-    height: 100%;
+    height: 50%;
 }
 footer {
     background-color: #202026;
