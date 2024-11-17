@@ -329,7 +329,7 @@ header nav ul li a{
     align-items: center;
 }
 .About .container .bottom  .i_do_card .card{
-    width: 500px;
+    width: 80%;
     height: 300px;
     background-color: #202026;
     display: flex;
