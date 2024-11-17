@@ -1,0 +1,833 @@
+@import url("./responsive.css");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden !important;
+}
+header{
+    width: 100vw;
+    height: 15vh;
+    background-color: #17171d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .navs{
+    width:35%;
+    min-height: 100vh;
+    display: none;
+    position: fixed;
+    z-index: 11111;
+    top: 0;
+    left: -200px;
+    background-color: rgb(3, 69, 73);
+    flex-direction: column;
+    animation: navs 0.5s  ease-in  forwards ;
+}
+@keyframes navs {
+    0%{
+        left: -200px;
+    }
+    100%{
+        left: 0;
+    }
+}
+header .navs ul{
+    height: 90%;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    flex-direction:column;
+    gap: 0;
+}
+header .navs ul li{
+    padding: 20px;
+}
+header .navs ul li a{
+    font-size: 20px;
+}
+header .navbar2{
+    width: 100%;
+    height: 16%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+header .navbar2 .nav2{
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    cursor: pointer;
+
+}
+header .navbar2 .nav2 img{
+    width: 30px;
+}
+header .navbar{
+    width: 100px;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+header .navbar .nav{
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header .navbar .nav span{
+    display: block;
+    width: 50px;
+    height: 7px;
+    background-color: #ffffff;
+    margin: 5px;
+}
+
+header nav{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+header nav ul li{
+    list-style: none;
+    /* padding: 20px; */
+}
+header nav ul li a{
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+}
+.hero{
+    width: 100vw;
+    min-height: 90vh;
+    background-color:#202026;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .container{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    
+}
+.hero .container .intro,.About .container .top .About_img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.hero .container .intro .hello{
+    width: 100px;
+    padding: 10px;
+    background-color: rgba(4, 230, 230, 0.753);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 30px;
+    border-bottom-left-radius: 0px;
+    color: rgba(255, 255, 255, 0.822);
+}
+.hero .container .intro  h1{
+    font-size: 60px;
+    color: white;
+}
+.hero .container .intro  h3{
+    font-size: 40px;
+    color: white;
+}
+.hero .container .intro  p{
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+}
+.hero .container .intro  p span {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5px;
+}
+.hero .container .intro  p span img{
+    width: 20px;
+    margin-right: 10px;
+}
+.hero .container .intro  div{
+    width: 100%;
+    height: 10%;
+}
+.hero .container .intro  div ul{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hero .container .intro  div ul a{
+    height: 10px;
+    width: 10px;
+    font-size: 10px;
+    margin: 10px;
+}
+.hero .container .intro  div ul a img{
+    width: 20px;
+    height: 20px;
+}
+.hero .container .logo,.About .container .About_text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .container .logo .imgs {
+    width: 320px;
+    height: 320px;
+    border-radius: 1000px;
+    background-color:rgba(0, 0, 0, 0.521);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .container .logo .imgss{
+    width: 90%;
+    height: 90%;
+    border-radius: 1000px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .container .logo .img{
+    width: 90%;
+    height: 90%;
+    background-image:url("../images/logo1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 1000px;
+}
+
+.About{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202026;
+    flex-direction: column;
+    padding: 10px;
+}
+.About .container{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.About .container .top ,.About .container .bottom{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        margin: 10px;
+}
+.About .container .top .About_img,.About .container .top .About_text{
+    height: 80%;
+}
+.About .container .top .About_text {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin: 10px;
+}
+.About .container .top .About_text h2{
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+}
+.About .container .top .About_text p{
+    color: white;
+    width: 90%;
+    padding-top: 10px;
+}
+.About .container  .top .About_text div{
+    width: 100%;
+    min-height: 10%;
+}
+.About .container .top .About_text div span{
+    display: inline-block;
+    width: 70px;
+    padding: 10px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid aqua;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+.About .container .top .About_text div span:last-child{
+    width: 120px;
+}
+.About .container .top .About_img .img{
+    width: 80%;
+    height: 273px;
+    background-image: url("../images/ab-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+.About .container .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.About .container .bottom .i_do_heading{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.About .container .bottom .i_do_heading h2{
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+.About .container .bottom  .i_do_card{
+    width: 100%;
+    min-height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.About .container .bottom  .i_do_card .card{
+    width: 500px;
+    height: 300px;
+    background-color: #202026;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 3px black;
+}
+.About .container .bottom  .i_do_card .card .item{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+}
+.About .container .bottom  .i_do_card .card .item img{
+    width: 40px;
+    height: 40px;
+}
+.About .container .bottom  .i_do_card .card .item h3{
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+}
+.About .container .bottom  .i_do_card .card .item  p{
+    font-size: 25px;
+    color: white;
+}
+.Skills{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202026;
+}
+.Skills .Professional_Skills,.Skills .Technical_Skills{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Skills .Technical_Skills .Show_skills{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Skills .Technical_Skills .Show_skills .Skills_heading{
+    width: 100%;
+    height: 20%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Skills .Technical_Skills .Show_skills .Skills_heading h2{
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+}
+.Skills .Technical_Skills .Show_skills .Percentage{
+    width: 80%;
+    height: 80%;
+}
+.Skills .Technical_Skills .Show_skills .Percentage .per{
+    min-width: 90%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.Skills .Technical_Skills .Show_skills .Percentage .per div{
+    width: 100%;
+    height: 50%;
+}
+.Skills .Technical_Skills .Show_skills .Percentage .per div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+}
+.Skills .Technical_Skills .Show_skills .Percentage .per div:nth-child(1) span{
+    font-size: 20px;
+    padding: 2px;
+    color: white;
+}
+
+.Skills .Technical_Skills .Show_skills .Percentage .per div:nth-child(2){
+    min-width: 400px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    justify-self: center;
+    align-self: center;
+    margin: 10px;
+    border-radius: 100px;
+}
+.Skills .Technical_Skills .Show_skills .Percentage .per div:nth-child(2) span{
+    display: inline-block;
+    width: 75%;
+    height: 100%;
+    background-color: aqua;
+    border-radius: 100px;
+}
+.Skills .Technical_Skills .Show_skills .Percentage .per div:nth-child(2) .html{
+    width: 80%;
+}
+.Skills .Technical_Skills .Show_skills .Percentage .per div:nth-child(2) .css{
+    width: 70%;
+}
+.Skills .Technical_Skills .Show_skills .Percentage .per div:nth-child(2) .React{
+    width: 50%;
+}
+.Skills .Technical_Skills .Show_skills .Percentage .per div:nth-child(2) .php{
+    width: 60%;
+}
+.Skills .Technical_Skills .Show_skills .Percentage .per div:nth-child(2) .Bootstrap{
+    width: 50%;
+}
+
+.Professional_Skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Professional_Skills .Professinal_skill{
+    width: 50%;
+    height: 80%;
+    background-color: white;
+}
+.Skills {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202026;
+    z-index: 999;
+}
+.Professional_Skills {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Professional_skill {
+    text-align: center;
+    color: white;
+}
+.Professional_skill h2 {
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+}
+.circle-skill {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.circle-skill {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.circle {
+    --percentage: 100;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(aqua calc(var(--percentage) * 1%), #333333 calc(var(--percentage) * 1%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+.circle::before {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: #202026; /* Background color matching the main section */
+    border-radius: 50%;
+    z-index: 1;
+}
+.circle span {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: aqua;
+    z-index: 999;
+}
+.skill p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ddd;
+}
+@media (max-width: 1200px) {
+    .Skills{
+        flex-direction: column;
+        min-height: 180vh;
+    }
+    .Skills .Professional_Skills, .Skills .Technical_Skills {
+        width: 90%; 
+        border: none; 
+    }
+
+    .Skills .Technical_Skills .Show_skills {
+        width: 100%; 
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .Skills .Technical_Skills .Show_skills .Skills_heading h2 {
+        font-size: 28px;
+    }
+
+    .Skills .Technical_Skills .Show_skills .Percentage {
+        width: 100%; 
+    }
+
+    .Skills .Technical_Skills .Show_skills .Percentage .per div:nth-child(1) {
+        min-width: 300px; 
+    }
+
+    .Skills .Technical_Skills .Show_skills .Percentage .per div:nth-child(2) {
+        min-width: 300px; 
+    }
+}
+
+.Projects {
+    width: 100%;
+    height: 70vh;
+    background-color: #202026;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Projects .Project_headings {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Projects .Project_headings h2 {
+    font-size: 2rem; /* Maintain consistent font size */
+    color: white;
+    font-weight: 500;
+}
+
+.Projects .Project {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Projects .Project .Project_card {
+    width: 350px; /* Fixed width for cards */
+    height: 250px; /* Maintain original proportions */
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.Projects .Project .Project_card:nth-child(1) {
+    background-image: url("../images/Project_1.png");
+}
+
+.Projects .Project .Project_card:nth-child(2) {
+    background-image: url("../images/Project_2.png");
+}
+
+.Projects .Project .Project_card:nth-child(3) {
+    background-image: url("../images/Project_3.png");
+}
+
+.Projects .Project .Project_card span{
+    width: 100%;
+    height: 100%;
+    background-color: #0606079f;
+    position: relative;
+    top: 200px;
+    display: none;
+    animation: projectCar 0.5s ease-in forwards;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.Projects .Project .Project_card span a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #000000;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.Projects .Project .Project_card span a:hover {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+.Projects .Project .Project_card:hover span {
+    display: flex;
+}
+
+@keyframes projectCar {
+    0% {
+
+        top: 200px;
+        opacity: 0.5;
+    }
+    100% {
+        top: 0;
+    }
+}
+.Contact{
+    width: 100vw;
+    height: 100vh;
+    background-color: #202026;
+    background-image: url("../images/map-color-overlay.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Contact .contact_heading{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Contact .contact_heading h2{
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+}
+.Contact .contact_items{
+    width: 100%;
+    height: 80%;
+   display: flex;
+}
+.Contact .contact_items .form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Contact .contact_items .form form{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.Contact .contact_items .form form input ,.Contact .contact_items .form form  button{
+    width: 90%;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+}
+.Contact .contact_items .form form  button {
+    background-color: rgba(0, 255, 255, 0.767);
+    border: none;
+    color: wheat;
+    font-weight: 900;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.Contact .contact_items .form form  button:hover{
+    background-color: transparent;
+    border: 1px solid  rgba(0, 255, 255, 0.767);
+}
+.Contact .contact_items .form form input::placeholder{
+    color: white;
+}
+.Contact .contact_items .form form  textarea{
+    resize: none;
+    width: 90%;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+
+}
+.Contact .contact_items .map{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Contact .contact_items .map .location{
+    width: 80%;
+    height: 80%;
+    border: 1px solid;
+
+}
+.Contact .contact_items .map .location iframe{
+    width: 100%;
+    height: 100%;
+}
+footer {
+    background-color: #202026;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .footer-content p {
+    margin: 0 0 10px;
+    font-size: 14px;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-links li {
+    display: inline;
+  }
+  
+  .social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  
+@media (max-width: 480px) {
+    .Skills .Technical_Skills .Show_skills .Skills_heading h2 {
+        font-size: 24px; 
+    }
+
+    .Skills .Technical_Skills .Show_skills .Percentage .per div:nth-child(1) {
+        flex-direction: column; 
+        align-items: flex-start;
+        min-width: auto;
+    }
+
+    .Skills .Technical_Skills .Show_skills .Percentage .per div:nth-child(1) span {
+        font-size: 16px; 
+    }
+
+    .Skills .Technical_Skills .Show_skills .Percentage .per div:nth-child(2) {
+        min-width: auto; 
+    }
+    .Projects .Project .Project_card{
+        width: 200px;
+    }
+    
+}

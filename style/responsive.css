@@ -1,0 +1,38 @@
+@media only screen and (max-width:950px) {
+    header #nav{
+        display: none !important;
+    }
+    header{
+        display: block !important;
+    }
+    header .navbar{
+        display: flex !important;
+    }
+    .About .container .top{
+        flex-direction: column-reverse;
+    }
+    .About .container .top .About_img ,.About .container .About_text{
+        width: 100% !important;
+    }
+    .hero .container {
+        flex-direction: column;
+    }
+    .hero .container  .intro,.hero .container .logo{
+        width: 100% !important;
+    }
+    .hero .container .logo .imgs{
+        width: 250px !important;
+        height: 250px !important;
+    }
+    .hero .container .intro h1{
+        font-size:40px !important;
+    }
+    .hero .container .intro h3{
+        font-size: 25px !important;
+    }
+    .Projects .Project{
+        flex-direction: column;
+        height: 90% !important;
+    }
+    
+}
