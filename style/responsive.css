@@ -34,5 +34,9 @@
         flex-direction: column;
         height: 90% !important;
     }
+    .About .container .bottom  .i_do_card .card .item{
+    width: 500px !important;
+    height: 300px !important;
+}
     
 }
