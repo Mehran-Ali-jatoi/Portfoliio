@@ -850,5 +850,8 @@ footer {
     .Projects .Project .Project_card{
         width:250px;
     }
+    .About .container .bottom  .i_do_card .card .item  p{
+    font-size: 18px;
+    }
     
 }
