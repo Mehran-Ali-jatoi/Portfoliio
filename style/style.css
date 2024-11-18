@@ -847,7 +847,7 @@ footer {
     .Skills .Technical_Skills .Show_skills .Percentage .per div:nth-child(2) {
         min-width: auto; 
     }
-    .Projects .Project .Project_card{
+    .Projects .Project .Project_card .card{
         width: 200px;
     }
     
